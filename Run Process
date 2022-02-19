@@ -1,0 +1,9 @@
+# Team-IPL
+#download Zip file
+#extract it to a folder 
+#open terminal and go to the project directory 
+#create virtual environment:cmd-python -m venv <env-name>
+#Activate it: cmd:./<env-name>/Scripts/activate
+#Download Django using cmd: pip install django
+#go to the manage.py directory
+#run the project by using cmd:python manage.py runserver
