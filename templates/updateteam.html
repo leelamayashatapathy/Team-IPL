@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>updateteam</title>
+</head>
+
+<body class="bg-secondary">
+  <a href="/" class="fa fa-home" style="font-size:40px;color:rgb(54, 51, 51); margin-left: 90%;"></a>
+  <div class="container">
+    <h1 style="text-align: center;">Team Update</h1>
+<form action="/updateteam/" method="post" enctype="multipart/form-data ">
+    {% csrf_token %}
+    <div class="mb-3">
+        <label for="name" class="form-label">TeamId</label>
+        <input type="number" class="form-control" name="tid" id="exampleFormControlInput1"  placeholder="Enter Team Id">
+      </div>
+      <div class="mb-3">
+        <label for="name" class="form-label">TeamName</label>
+        <input type="text" class="form-control" name="tname" id="exampleFormControlInput1"  placeholder="Enter Team name">
+      </div>
+      <div class="mb-3">
+        <label for="name" class="form-label">Short Code</label>
+        <input type="text" class="form-control" name="sc" id="exampleFormControlInput1" placeholder="e.g:csk,mi">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Top Batsman</label>
+        <input type="text" class="form-control" name="tbat" id="exampleFormControlInput1" name="bahand" placeholder="Enter Top Batsman Name">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Top Bowler</label>
+        <input type="text" class="form-control" name="tbal" id="exampleFormControlInput1"  placeholder="Enter Top Bolwer Name">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Trophy Won</label>
+        <input type="text" class="form-control" name="twon" id="exampleFormControlInput1"  placeholder="How Many Trophy?">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Total Player</label>
+        <input type="number" class="form-control" name="tplay" id="exampleFormControlInput1"  placeholder="How Many Player?">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Team Logo</label>
+        <input type="text" class="form-control" name="timg" id="exampleFormControlInput1"  placeholder="Enter Image url">
+      </div>
+      <button value="submit" type="submit" class="btn btn-info">submit</button>
+  </form>
+</div>
+
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
